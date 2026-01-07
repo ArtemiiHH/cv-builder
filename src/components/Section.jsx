@@ -1,1 +1,3 @@
-export default function Section() {}
+export default function Section() {
+  return <section></section>
+}

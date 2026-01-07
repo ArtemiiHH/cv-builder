@@ -1,11 +1,15 @@
 export default function Header() {
   return (
     <header>
-      <button>Personal</button>
-      <button>Experience</button>
-      <button>Edutacion</button>
-      <button>Skills</button>
-      <button>Download</button>
+      <div className="header-left">
+        <button>Personal</button>
+        <button>Experience</button>
+        <button>Education</button>
+        <button>Skills</button>
+      </div>
+      <div className="header-right">
+        <button>Download</button>
+      </div>
     </header>
   );
 }

@@ -6,7 +6,8 @@ import SkillsForm from "./SkillsForm";
 export default function Editor() {
   return (
     <div className="editor-window">
-      <h3>Editor window</h3>
+      <h3>Personal Information</h3>
+      <PersonalForm></PersonalForm>
     </div>
   );
 }

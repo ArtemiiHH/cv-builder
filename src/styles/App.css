@@ -1,10 +1,16 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0 20px;
   background-color: rgb(239, 239, 239);
   height: 100vh;
+}
+
+/* Editor title */
+h1 {
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 /* Header */
@@ -55,7 +61,7 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   border: 1px solid black;
 }
 
@@ -68,17 +74,38 @@ input {
   background-color: rgb(239, 239, 239);
   height: 60px;
   width: auto;
-  border: none;
+  border: 3px solid rgb(239, 239, 239);
   border-radius: 10px;
+  outline: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  border: 3px solid rgb(212, 212, 212);
 }
 
 input[placeholder] {
   font-size: 1.2rem;
-  padding-left: 20px;
+  padding-left: 15px;
+}
+
+textarea {
+  background-color: rgb(239, 239, 239);
+  height: 120px;
+  width: auto;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea[placeholder] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  padding: 15px;
 }
 
 /* Personal Form */
-.input-full-name, .input-profession {
+.input-group {
   display: flex;
   flex-direction: column;
   gap: 10px;

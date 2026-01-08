@@ -28,12 +28,17 @@ header {
   border-bottom-right-radius: 20px;
 }
 
-.header-left {
+.header-tab-navigation {
   display: flex;
   gap: 10px;
 }
 
-.header-right {
+.header-tab-navigation button {
+  background-color: rgb(239, 239, 239);
+  color: black;
+}
+
+.download-btn {
   display: flex;
   justify-content: end;
 }

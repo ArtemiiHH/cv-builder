@@ -10,7 +10,7 @@ body {
 /* Editor title */
 h1 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /* Header */
@@ -34,13 +34,27 @@ header {
 }
 
 .header-tab-navigation button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
   background-color: rgb(239, 239, 239);
   color: black;
 }
 
-.download-btn {
-  display: flex;
-  justify-content: end;
+.header-download-btn button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: darkblue;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 /* Main section */
@@ -133,19 +147,4 @@ textarea:focus {
   width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-/* Buttons  */
-button {
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: darkblue;
-  color: white;
-}
-
-button:hover {
-  opacity: 0.8;
 }

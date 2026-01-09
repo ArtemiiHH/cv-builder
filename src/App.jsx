@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { act, useState } from "react";
 import "./styles/App.css";
 import Header from "./components/Header";
 import Section from "./components/Section";
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header activeTab={activeTab} onTabChange={onTabChange}></Header>
-      <Section></Section>
+      <Section activeTab={activeTab}></Section>
     </>
   );
 }

@@ -1,1 +1,1 @@
-export default function EducationForm() {}
+export default function EducationTab() {}

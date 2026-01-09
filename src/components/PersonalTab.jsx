@@ -1,4 +1,4 @@
-export default function PersonalForm() {
+export default function PersonalTab() {
   return (
     <>
       <h1>Personal Information</h1>

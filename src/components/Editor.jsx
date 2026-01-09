@@ -28,7 +28,5 @@ export default function Editor({ activeTab }) {
         <SkillsTab></SkillsTab>
       </div>
     );
-  } else {
-    return <div className="editor-window"></div>;
   }
 }

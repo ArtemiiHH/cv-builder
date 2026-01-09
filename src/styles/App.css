@@ -28,12 +28,12 @@ header {
   border-bottom-right-radius: 20px;
 }
 
-.header-tab-navigation {
+.tab-navigation {
   display: flex;
   gap: 10px;
 }
 
-.header-tab-navigation button {
+.tab-navigation button {
   padding: 15px 25px;
   border-radius: 10px;
   border: none;
@@ -43,7 +43,11 @@ header {
   color: black;
 }
 
-.header-download-btn button {
+.tab-navigation button.active-tab {
+  background-color: rgb(161, 161, 161);
+}
+
+.download-btn button {
   padding: 15px 25px;
   border-radius: 10px;
   border: none;

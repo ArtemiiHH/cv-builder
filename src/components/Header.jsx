@@ -5,33 +5,33 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="header-tab-navigation">
+      <nav className="tab-navigation">
         <button
-          className={activeTab === "personal" ? "active" : ""}
+          className={activeTab === "personal" ? "active-tab" : ""}
           onClick={() => setActiveTab("personal")}
         >
           Personal
         </button>
         <button
-          className={activeTab === "experience" ? "active" : ""}
+          className={activeTab === "experience" ? "active-tab" : ""}
           onClick={() => setActiveTab("experience")}
         >
           Experience
         </button>
         <button
-          className={activeTab === "education" ? "active" : ""}
+          className={activeTab === "education" ? "active-tab" : ""}
           onClick={() => setActiveTab("education")}
         >
           Education
         </button>
         <button
-          className={activeTab === "skills" ? "active" : ""}
+          className={activeTab === "skills" ? "active-tab" : ""}
           onClick={() => setActiveTab("skills")}
         >
           Skills
         </button>
       </nav>
-      <div className="header-download-btn">
+      <div className="download-btn">
         <button>Download</button>
       </div>
     </header>

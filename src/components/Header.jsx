@@ -3,12 +3,17 @@ import { useState } from "react";
 export default function Header() {
   const [activeTab, setActiveTab] = useState("personal");
 
+  function onTabChange(tabName) {
+    setActiveTab(tabName);
+  }
+
   return (
     <header>
       <nav className="header-tab-navigation">
         <button
           className={activeTab === "personal" ? "active" : ""}
           onClick={() => setActiveTab("personal")}
+          onTabChange={(e) => e.target.value}
         >
           Personal
         </button>

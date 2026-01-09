@@ -4,41 +4,18 @@ export default function SkillsTab() {
       <h1>Skills</h1>
       <form>
         <div className="input-group">
-          {/* Full Name */}
+          {/* Soft Skills */}
           <div className="input-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="John Doe" />
-          </div>
-          {/* Profession */}
-          <div className="input-group">
-            <label>Profession</label>
-            <input type="text" placeholder="ex. Full Stack Developer" />
+            <label>Soft Skills</label>
+            <input type="text" placeholder="Communication" />
           </div>
         </div>
 
         <div className="input-group">
-          {/* Profession */}
+          {/* Technical Skills */}
           <div className="input-group">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone" />
-          </div>
-          {/* Email */}
-          <div className="input-group">
-            <label>Email</label>
-            <input type="email" placeholder="example@gmail.com" />
-          </div>
-          {/* Location */}
-          <div className="input-group">
-            <label>Location</label>
-            <input type="text" placeholder="Limassol, Cyprus" />
-          </div>
-        </div>
-
-        <div className="input-group">
-          {/* Biography */}
-          <div className="input-group">
-            <label>Biography</label>
-            <textarea placeholder="Tell us more about yourself..."></textarea>
+            <label>Technical Skills</label>
+            <input type="text" placeholder="Javascript" />
           </div>
         </div>
       </form>

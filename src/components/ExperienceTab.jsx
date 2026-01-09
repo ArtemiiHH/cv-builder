@@ -4,28 +4,28 @@ export default function ExperienceTab() {
       <h1>Work Experience</h1>
       <form>
         <div className="input-group">
-          {/* Full Name */}
+          {/* Company */}
           <div className="input-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="John Doe" />
+            <label>Company</label>
+            <input type="text" placeholder="Exness" />
           </div>
-          {/* Profession */}
+          {/* Position */}
           <div className="input-group">
-            <label>Profession</label>
-            <input type="text" placeholder="ex. Full Stack Developer" />
+            <label>Position</label>
+            <input type="text" placeholder="e.g. Full Stack Developer" />
           </div>
         </div>
 
         <div className="input-group">
-          {/* Profession */}
+          {/* Start Date */}
           <div className="input-group">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone" />
+            <label>Start Date</label>
+            <input type="number" placeholder="Sep 2024" />
           </div>
-          {/* Email */}
+          {/* End Date */}
           <div className="input-group">
-            <label>Email</label>
-            <input type="email" placeholder="example@gmail.com" />
+            <label>End Date</label>
+            <input type="number" placeholder="Dec 2025" />
           </div>
           {/* Location */}
           <div className="input-group">
@@ -35,10 +35,10 @@ export default function ExperienceTab() {
         </div>
 
         <div className="input-group">
-          {/* Biography */}
+          {/* Description */}
           <div className="input-group">
-            <label>Biography</label>
-            <textarea placeholder="Tell us more about yourself..."></textarea>
+            <label>Description</label>
+            <textarea placeholder="e.g. Create responsive web applications, Build API routes, Run unit tests etc..."></textarea>
           </div>
         </div>
       </form>

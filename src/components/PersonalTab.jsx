@@ -12,7 +12,7 @@ export default function PersonalTab() {
           {/* Profession */}
           <div className="input-group">
             <label>Profession</label>
-            <input type="text" placeholder="ex. Full Stack Developer" />
+            <input type="text" placeholder="e.g. Full Stack Developer" />
           </div>
         </div>
 

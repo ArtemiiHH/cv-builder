@@ -4,41 +4,33 @@ export default function EducationTab() {
       <h1>Education Details</h1>
       <form>
         <div className="input-group">
-          {/* Full Name */}
+          {/* Soft Skills */}
           <div className="input-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="John Doe" />
+            <label>School Name</label>
+            <input type="text" placeholder="Harvard University" />
           </div>
-          {/* Profession */}
+          {/* Degree */}
           <div className="input-group">
-            <label>Profession</label>
-            <input type="text" placeholder="ex. Full Stack Developer" />
+            <label>Degree</label>
+            <input type="text" placeholder="Bachelor of Computer Science" />
           </div>
         </div>
 
         <div className="input-group">
-          {/* Profession */}
+          {/* Start Year */}
           <div className="input-group">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone" />
+            <label>Start Year</label>
+            <input type="text" placeholder="Sep 2021" />
           </div>
-          {/* Email */}
+          {/* End Year */}
           <div className="input-group">
-            <label>Email</label>
-            <input type="email" placeholder="example@gmail.com" />
+            <label>Graduation Year</label>
+            <input type="text" placeholder="July 2025" />
           </div>
           {/* Location */}
           <div className="input-group">
             <label>Location</label>
             <input type="text" placeholder="Limassol, Cyprus" />
-          </div>
-        </div>
-
-        <div className="input-group">
-          {/* Biography */}
-          <div className="input-group">
-            <label>Biography</label>
-            <textarea placeholder="Tell us more about yourself..."></textarea>
           </div>
         </div>
       </form>

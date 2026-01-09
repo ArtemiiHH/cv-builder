@@ -1,16 +1,7 @@
 import { useState } from "react";
-// Import Tabs
-import PersonalTab from "./PersonalTab";
-import ExperienceTab from "./ExperienceTab";
-import EducationTab from "./EducationTab";
-import SkillsTab from "./SkillsTab";
 
 export default function Header() {
   const [activeTab, setActiveTab] = useState("personal");
-
-  function onTabChange(tabName) {
-    setActiveTab(tabName);
-  }
 
   return (
     <header>
@@ -18,7 +9,6 @@ export default function Header() {
         <button
           className={activeTab === "personal" ? "active" : ""}
           onClick={() => setActiveTab("personal")}
-          onTabChange={(PersonalTab) => setActiveTab(PersonalTab)}
         >
           Personal
         </button>

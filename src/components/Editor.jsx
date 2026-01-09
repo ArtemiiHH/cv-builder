@@ -1,8 +1,34 @@
 import PersonalTab from "./PersonalTab";
-import EducationTab from "./EducationTab";
 import ExperienceTab from "./ExperienceTab";
+import EducationTab from "./EducationTab";
 import SkillsTab from "./SkillsTab";
 
 export default function Editor({ activeTab }) {
-  return <div className="editor-window"></div>;
+  if (activeTab === "personal") {
+    return (
+      <div className="editor-window">
+        <PersonalTab></PersonalTab>
+      </div>
+    );
+  } else if (activeTab === "experience") {
+    return (
+      <div className="editor-window">
+        <ExperienceTab></ExperienceTab>
+      </div>
+    );
+  } else if (activeTab === "education") {
+    return (
+      <div className="editor-window">
+        <EducationTab></EducationTab>
+      </div>
+    );
+  } else if (activeTab === "skills") {
+    return (
+      <div className="editor-window">
+        <SkillsTab></SkillsTab>
+      </div>
+    );
+  } else {
+    return <div className="editor-window"></div>;
+  }
 }

@@ -1,7 +1,7 @@
-import ExperienceForm from "./ExperienceForm";
-import EducationForm from "./EducationForm";
-import SkillsForm from "./SkillsForm";
 import PersonalTab from "./PersonalTab";
+import EducationTab from "./EducationTab";
+import ExperienceTab from "./ExperienceTab";
+import SkillsTab from "./SkillsTab";
 
 export default function Editor() {
   return (

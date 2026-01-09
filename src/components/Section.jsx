@@ -1,10 +1,10 @@
 import Editor from "./Editor";
 import Preview from "./Preview";
 
-export default function Section() {
+export default function Section({ activeTab }) {
   return (
     <section>
-      <Editor></Editor>
+      <Editor activeTab={activeTab}></Editor>
       <Preview></Preview>
     </section>
   );

@@ -20,12 +20,12 @@ export default function PersonalForm() {
           {/* Profession */}
           <div className="input-group">
             <label>Phone Number</label>
-            <input type="text" placeholder="Enter phone" />
+            <input type="number" placeholder="Enter phone" />
           </div>
           {/* Email */}
           <div className="input-group">
             <label>Email</label>
-            <input type="text" placeholder="example@gmail.com" />
+            <input type="email" placeholder="example@gmail.com" />
           </div>
           {/* Location */}
           <div className="input-group">

@@ -1,14 +1,18 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./styles/App.css";
 import Header from "./components/Header";
 import Section from "./components/Section";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("personal");
+
+  function onTabChange(tab) {
+    setActiveTab(tab);
+  }
+
   return (
     <>
-      <Header></Header>
+      <Header activeTab={activeTab} onTabChange={onTabChange}></Header>
       <Section></Section>
     </>
   );

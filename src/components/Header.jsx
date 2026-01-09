@@ -1,32 +1,28 @@
-import { useState } from "react";
-
-export default function Header() {
-  const [activeTab, setActiveTab] = useState("personal");
-
+function Header({ activeTab, onTabChange }) {
   return (
     <header>
       <nav className="tab-navigation">
         <button
           className={activeTab === "personal" ? "active-tab" : ""}
-          onClick={() => setActiveTab("personal")}
+          onClick={() => onTabChange("personal")}
         >
           Personal
         </button>
         <button
           className={activeTab === "experience" ? "active-tab" : ""}
-          onClick={() => setActiveTab("experience")}
+          onClick={() => onTabChange("experience")}
         >
           Experience
         </button>
         <button
           className={activeTab === "education" ? "active-tab" : ""}
-          onClick={() => setActiveTab("education")}
+          onClick={() => onTabChange("education")}
         >
           Education
         </button>
         <button
           className={activeTab === "skills" ? "active-tab" : ""}
-          onClick={() => setActiveTab("skills")}
+          onClick={() => onTabChange("skills")}
         >
           Skills
         </button>
@@ -37,3 +33,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

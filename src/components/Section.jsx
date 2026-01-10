@@ -28,7 +28,7 @@ export default function Section({ activeTab }) {
     <section>
       <Editor
         activeTab={activeTab}
-        cvData={cvData.personal}
+        cvData={cvData}
         updatePersonalInput={updatePersonalInput}
       ></Editor>
       <Preview cvData={cvData}></Preview>

@@ -4,14 +4,12 @@ import EducationTab from "./EducationTab";
 import SkillsTab from "./SkillsTab";
 
 export default function Editor({ activeTab, cvData, updatePersonalInput }) {
-  const personalData = cvData.personal;
-
   if (activeTab === "personal") {
     return (
       <div className="editor-window">
         <PersonalTab
-          cvData={personalData}
-          updatePersonalInput={() => updatePersonalInput(fullName, value)}
+          personalData={cvData.personal}
+          updatePersonalInput={updatePersonalInput}
         ></PersonalTab>
       </div>
     );

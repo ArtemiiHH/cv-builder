@@ -9,7 +9,7 @@ export default function PersonalTab({ personalData, updatePersonalInput }) {
             <label>Full Name</label>
             <input
               value={personalData.fullName}
-              onChange={(e) => updatePersonalInput(fullName, e.target.value)}
+              onChange={(e) => updatePersonalInput("fullName", e.target.value)}
               type="text"
               placeholder="John Doe"
             />

@@ -3,16 +3,35 @@ import Editor from "./Editor";
 import Preview from "./Preview";
 
 export default function Section({ activeTab }) {
-  const [inputValue, setInputValue] = useState("");
+  const [cvData, setCvData] = useState({
+    personal: {
+      fullName: "",
+      profession: "",
+      phoneNumber: "",
+      email: "",
+      location: "",
+      biography: "",
+    },
+  });
 
-  function handleChange(e) {
-    setInputValue(e.target.value);
+  function updatePersonalInput(input, value) {
+    setCvData({
+      ...cvData,
+      personal: {
+        ...cvData.personal,
+        [input]: value,
+      },
+    });
   }
 
   return (
     <section>
-      <Editor activeTab={activeTab} inputValue={inputValue} handleChange={handleChange} ></Editor>
-      <Preview inputValue={inputValue}></Preview>
+      <Editor
+        activeTab={activeTab}
+        cvData={cvData.personal}
+        updatePersonalInput={updatePersonalInput}
+      ></Editor>
+      <Preview cvData={cvData}></Preview>
     </section>
   );
 }

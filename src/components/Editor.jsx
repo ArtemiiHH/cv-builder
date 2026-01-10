@@ -3,11 +3,16 @@ import ExperienceTab from "./ExperienceTab";
 import EducationTab from "./EducationTab";
 import SkillsTab from "./SkillsTab";
 
-export default function Editor({ activeTab, inputValue, handleChange }) {
+export default function Editor({ activeTab, cvData, updatePersonalInput }) {
+  const personalData = cvData.personal;
+
   if (activeTab === "personal") {
     return (
       <div className="editor-window">
-        <PersonalTab inputValue={inputValue} handleChange={handleChange} ></PersonalTab>
+        <PersonalTab
+          cvData={personalData}
+          updatePersonalInput={() => updatePersonalInput(fullName, value)}
+        ></PersonalTab>
       </div>
     );
   } else if (activeTab === "experience") {

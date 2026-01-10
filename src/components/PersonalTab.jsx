@@ -1,4 +1,4 @@
-export default function PersonalTab() {
+export default function PersonalTab({ inputValue, handleChange }) {
   return (
     <>
       <h1>Personal Information</h1>
@@ -7,7 +7,7 @@ export default function PersonalTab() {
           {/* Full Name */}
           <div className="input-group">
             <label>Full Name</label>
-            <input type="text" placeholder="John Doe" />
+            <input inputValue={inputValue} onChange={handleChange} type="text" placeholder="John Doe" />
           </div>
           {/* Profession */}
           <div className="input-group">

@@ -3,11 +3,11 @@ import ExperienceTab from "./ExperienceTab";
 import EducationTab from "./EducationTab";
 import SkillsTab from "./SkillsTab";
 
-export default function Editor({ activeTab }) {
+export default function Editor({ activeTab, inputValue, handleChange }) {
   if (activeTab === "personal") {
     return (
       <div className="editor-window">
-        <PersonalTab></PersonalTab>
+        <PersonalTab inputValue={inputValue} handleChange={handleChange} ></PersonalTab>
       </div>
     );
   } else if (activeTab === "experience") {

@@ -148,7 +148,8 @@ textarea:focus {
 }
 
 /* CV sheet preview */
-.preview-pdf {
+.cv-preview {
+  text-align: center;
   height: 100%;
   width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,

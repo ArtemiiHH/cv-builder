@@ -15,13 +15,13 @@ export default function Section({ activeTab }) {
   });
 
   function updatePersonalInput(input, value) {
-    setCvData({
-      ...cvData,
+    setCvData((previous) => ({
+      ...previous,
       personal: {
-        ...cvData.personal,
+        ...previous.personal,
         [input]: value,
       },
-    });
+    }));
   }
 
   return (

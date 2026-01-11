@@ -17,7 +17,9 @@ export default function Preview({ cvData }) {
           </div>
 
           {/* Profile */}
-          <div className="profile"></div>
+          <div className="profile">
+            <h4>Profile</h4>
+          </div>
 
           {/* Work Experience */}
           <div className="work-experience"></div>

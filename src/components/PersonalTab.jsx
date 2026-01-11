@@ -1,7 +1,7 @@
 export default function PersonalTab({ personalData, updatePersonalInput }) {
   return (
     <>
-      <h1>Personal Information</h1>
+      <h1 className="form-title">Personal Information</h1>
       <form>
         <div className="input-group">
           {/* Full Name */}

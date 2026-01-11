@@ -1,7 +1,7 @@
 export default function SkillsTab() {
   return (
     <>
-      <h1>Skills</h1>
+      <h1 className="form-title">Skills</h1>
       <form>
         <div className="input-group">
           {/* Soft Skills */}

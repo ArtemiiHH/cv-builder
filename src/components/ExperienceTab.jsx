@@ -1,7 +1,7 @@
 export default function ExperienceTab() {
   return (
     <>
-      <h1>Work Experience</h1>
+      <h1 className="form-title">Work Experience</h1>
       <form>
         <div className="input-group">
           {/* Company */}

@@ -12,6 +12,11 @@ h1, h2, h3 {
   margin: 0;
 }
 
+/* Form title */
+.form-title {
+  margin-bottom: 20px;
+}
+
 /* Header */
 header {
   display: flex;

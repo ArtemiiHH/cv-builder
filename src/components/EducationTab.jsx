@@ -1,7 +1,7 @@
 export default function EducationTab() {
   return (
     <>
-      <h1>Education Details</h1>
+      <h1 className="form-title">Education Details</h1>
       <form>
         <div className="input-group">
           {/* Soft Skills */}

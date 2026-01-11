@@ -19,6 +19,7 @@ export default function Preview({ cvData }) {
           {/* Profile */}
           <div className="profile">
             <h4 className="cv-section-titles">PROFILE</h4>
+            <p>{cvData.personal.biography}</p>
           </div>
 
           {/* Work Experience */}
@@ -32,6 +33,19 @@ export default function Preview({ cvData }) {
           {/* Contact Details */}
           <div className="contact-details">
             <h4 className="cv-section-titles">CONTACT</h4>
+            <ul>
+              {/* Phone Number */}
+              <li>
+                {cvData.personal.phoneNumber}
+              </li>
+              {/* Email */}
+              <li>
+                {cvData.personal.email}
+              </li>
+              <li>
+                {cvData.personal.location}
+              </li>
+            </ul>
           </div>
 
           {/* Education Details */}

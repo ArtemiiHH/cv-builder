@@ -181,6 +181,7 @@ textarea:focus {
   font-size: 1.2rem;
   letter-spacing: 4px;
   font-weight: 600;
+  margin: 0;
 }
 
 /* Full Name */

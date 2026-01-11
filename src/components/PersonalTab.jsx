@@ -32,17 +32,34 @@ export default function PersonalTab({ personalData, updatePersonalInput }) {
           {/* Profession */}
           <div className="input-group">
             <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone" />
+            <input
+              value={personalData.phoneNumber}
+              onChange={(e) =>
+                updatePersonalInput("phoneNumber", e.target.value)
+              }
+              type="text"
+              placeholder="Enter phone"
+            />
           </div>
           {/* Email */}
           <div className="input-group">
             <label>Email</label>
-            <input type="email" placeholder="example@gmail.com" />
+            <input
+              value={personalData.email}
+              onChange={(e) => updatePersonalInput("email", e.target.value)}
+              type="email"
+              placeholder="example@gmail.com"
+            />
           </div>
           {/* Location */}
           <div className="input-group">
             <label>Location</label>
-            <input type="text" placeholder="Limassol, Cyprus" />
+            <input
+              value={personalData.location}
+              onChange={(e) => updatePersonalInput("location", e.target.value)}
+              type="text"
+              placeholder="Limassol, Cyprus"
+            />
           </div>
         </div>
 
@@ -50,7 +67,11 @@ export default function PersonalTab({ personalData, updatePersonalInput }) {
           {/* Biography */}
           <div className="input-group">
             <label>Biography</label>
-            <textarea placeholder="Tell us more about yourself..."></textarea>
+            <textarea
+              value={personalData.biography}
+              onChange={(e) => updatePersonalInput("biography", e.target.value)}
+              placeholder="Tell us more about yourself..."
+            ></textarea>
           </div>
         </div>
       </form>

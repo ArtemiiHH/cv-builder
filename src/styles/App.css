@@ -176,6 +176,13 @@ textarea:focus {
   grid-template-rows: repeat(4, 1fr);
 }
 
+/* Section Titles */
+.cv-section-titles {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
 /* Full Name */
 .cv-name {
   font-size: 3.5rem;

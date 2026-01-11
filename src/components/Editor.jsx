@@ -24,6 +24,7 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
     return (
       <div className="editor-window">
         <ExperienceTab
+          isFormOpen={isFormOpen}
           displayForm={displayForm}
         ></ExperienceTab>
       </div>

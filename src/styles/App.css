@@ -213,3 +213,8 @@ textarea:focus {
   letter-spacing: 4px;
   font-weight: 400;
 }
+
+/* Personal Form empty text */
+.empty-text {
+  font-size: 1.2rem;
+}

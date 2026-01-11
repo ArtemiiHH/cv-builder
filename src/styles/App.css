@@ -146,25 +146,26 @@ textarea:focus {
   gap: 10px;
 }
 
-/* Preview window */
+/* Preview */
 .preview-window {
   display: flex;
   justify-content: center;
   padding: 30px 30px 0 30px;
 }
 
-/* CV sheet preview */
+/* CV Preview sheet */
 .cv-preview {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 40px;
-  text-align: center;
+  text-align: left;
   height: auto;
   width: 75%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+/* Split Preview into 2 columns */
 .row-one {
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;

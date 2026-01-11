@@ -18,26 +18,36 @@ export default function Preview({ cvData }) {
 
           {/* Profile */}
           <div className="profile">
-            <h4>Profile</h4>
+            <h4 className="cv-section-titles">PROFILE</h4>
           </div>
 
           {/* Work Experience */}
-          <div className="work-experience"></div>
+          <div className="work-experience">
+            <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
+          </div>
         </div>
 
         {/* Right Row */}
         <div className="row-two">
           {/* Contact Details */}
-          <div className="contact-details"></div>
+          <div className="contact-details">
+            <h4 className="cv-section-titles">CONTACT</h4>
+          </div>
 
           {/* Education Details */}
-          <div className="education-details"></div>
+          <div className="education-details">
+            <h4 className="cv-section-titles">EDUCATION</h4>
+          </div>
 
           {/* Soft Skills */}
-          <div className="soft-skills"></div>
+          <div className="soft-skills">
+            <h4 className="cv-section-titles">SOFT SKILLS</h4>
+          </div>
 
           {/* Hard Skills */}
-          <div className="hard-skills"></div>
+          <div className="hard-skills">
+            <h4 className="cv-section-titles">HARD SKILLS</h4>
+          </div>
         </div>
       </div>
     </div>

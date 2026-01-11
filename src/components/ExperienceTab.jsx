@@ -5,7 +5,7 @@ export default function ExperienceTab() {
         <h1 className="form-title">Work Experience</h1>
         <button className="add-button">+ Add</button>
       </div>
-      <form>
+      <form className="experience-form">
         <div className="input-group">
           {/* Company */}
           <div className="input-group">

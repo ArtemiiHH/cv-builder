@@ -12,6 +12,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.personal-form-title {
+  margin-bottom: 20px;
+}
+
 .form-navigation {
   display: flex;
   justify-content: space-between;

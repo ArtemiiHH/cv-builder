@@ -50,6 +50,11 @@ export default function ExperienceTab({ isFormOpen, displayForm }) {
               <label>Description</label>
               <textarea placeholder="e.g. Create responsive web applications, Build API routes, Run unit tests etc..."></textarea>
             </div>
+
+            <div className="save-cancel-button-box">
+              <button className="save-button">Save</button>
+              <button className="cancel-button">Cancel</button>
+            </div>
           </div>
         </form>
       )}

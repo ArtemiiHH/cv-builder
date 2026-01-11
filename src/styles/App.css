@@ -7,11 +7,7 @@ body {
   height: 100vh;
 }
 
-/* Editor title */
-h1 {
-  padding-bottom: 30px;
-}
-
+/* Titles */
 h1, h2, h3 {
   margin: 0;
 }
@@ -154,7 +150,9 @@ textarea:focus {
 
 /* CV sheet preview */
 .cv-preview {
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 40px;
   text-align: center;
   height: auto;
   width: 75%;
@@ -162,11 +160,20 @@ textarea:focus {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.row-one {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+.row-two {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
 /* Full Name */
 .cv-name {
   font-size: 3.5rem;
   font-weight: 300;
-  padding: 20px 20px 0 20px;
 }
 
 /* Profession */

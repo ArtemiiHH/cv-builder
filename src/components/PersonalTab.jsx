@@ -17,7 +17,14 @@ export default function PersonalTab({ personalData, updatePersonalInput }) {
           {/* Profession */}
           <div className="input-group">
             <label>Profession</label>
-            <input type="text" placeholder="e.g. Full Stack Developer" />
+            <input
+              value={personalData.profession}
+              onChange={(e) =>
+                updatePersonalInput("profession", e.target.value)
+              }
+              type="text"
+              placeholder="e.g. Full Stack Developer"
+            />
           </div>
         </div>
 

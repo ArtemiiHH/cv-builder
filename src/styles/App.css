@@ -9,8 +9,11 @@ body {
 
 /* Editor title */
 h1 {
-  margin: 0;
   padding-bottom: 30px;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }
 
 /* Header */
@@ -163,5 +166,12 @@ textarea:focus {
 .cv-name {
   font-size: 3.5rem;
   font-weight: 300;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+}
+
+/* Profession */
+.cv-profession {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
 }

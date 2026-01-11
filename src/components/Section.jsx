@@ -12,6 +12,15 @@ export default function Section({ activeTab }) {
       location: "",
       biography: "",
     },
+
+    experience: {
+      company: "",
+      position: "",
+      startDate: "",
+      endDate: "",
+      location: "",
+      description: "",
+    },
   });
 
   function updatePersonalInput(input, value) {

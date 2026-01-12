@@ -1,4 +1,4 @@
-export default function ExperienceTab({ isFormOpen, displayForm }) {
+export default function ExperienceTab({ isFormOpen, cancelForm, displayForm }) {
   return (
     <>
       {/* Header Always Visible */}
@@ -53,7 +53,9 @@ export default function ExperienceTab({ isFormOpen, displayForm }) {
 
             <div className="save-cancel-button-box">
               <button className="save-button">Save</button>
-              <button className="cancel-button">Cancel</button>
+              <button className="cancel-button" onClick={(e) => cancelForm(e)}>
+                Cancel
+              </button>
             </div>
           </div>
         </form>

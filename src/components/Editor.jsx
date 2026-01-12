@@ -7,8 +7,15 @@ import { useState } from "react";
 export default function Editor({ activeTab, cvData, updatePersonalInput }) {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
+  // Show form
   function displayForm() {
     setIsFormOpen(true);
+  }
+
+  // Close form when Cancel Button pressed
+  function cancelForm(e) {
+    e.preventDefault();
+    setIsFormOpen(false);
   }
 
   if (activeTab === "personal") {
@@ -26,6 +33,7 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
         <ExperienceTab
           isFormOpen={isFormOpen}
           displayForm={displayForm}
+          cancelForm={cancelForm}
         ></ExperienceTab>
       </div>
     );

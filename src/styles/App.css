@@ -248,3 +248,18 @@ textarea:focus {
 .empty-text {
   font-size: 1.2rem;
 }
+
+/* Experience Form */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  background-color: rgb(239, 239, 239);
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

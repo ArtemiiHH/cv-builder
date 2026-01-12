@@ -1,4 +1,9 @@
-export default function ExperienceTab({ isFormOpen, cancelForm, displayForm }) {
+export default function ExperienceTab({
+  isFormOpen,
+  displayForm,
+  saveExperiences,
+  cancelForm,
+}) {
   return (
     <>
       {/* Header Always Visible */}

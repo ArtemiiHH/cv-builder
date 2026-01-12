@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Editor({ activeTab, cvData, updatePersonalInput }) {
   const [isFormOpen, setIsFormOpen] = useState(false);
+  const [experiences, setExperiences] = useState([]);
 
   // Show form
   function displayForm() {
@@ -15,6 +16,12 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
   // Close form when Cancel Button pressed
   function cancelForm(e) {
     e.preventDefault();
+    setIsFormOpen(false);
+  }
+
+  // Save and close form when Save Button pressed
+  function saveExperience(company) {
+    setExperiences([...experiences, { company }]);
     setIsFormOpen(false);
   }
 
@@ -33,6 +40,7 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
         <ExperienceTab
           isFormOpen={isFormOpen}
           displayForm={displayForm}
+          saveExperience={saveExperience}
           cancelForm={cancelForm}
         ></ExperienceTab>
       </div>

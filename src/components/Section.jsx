@@ -23,6 +23,7 @@ export default function Section({ activeTab }) {
     },
   });
 
+  // Update Personal Form Inputs Live
   function updatePersonalInput(input, value) {
     setCvData((previous) => ({
       ...previous,

@@ -1,9 +1,22 @@
+import { useState } from "react";
+
 export default function ExperienceTab({
   isFormOpen,
   displayForm,
-  saveExperiences,
+  experiences,
+  saveExperience,
   cancelForm,
 }) {
+  // Company's name as state
+  const [company, setCompany] = useState("");
+
+  // Handle Save Button
+  function handleSave(e) {
+    e.preventDefault();
+    saveExperience(company);
+    setCompany("");
+  }
+``
   return (
     <>
       {/* Header Always Visible */}
@@ -14,15 +27,35 @@ export default function ExperienceTab({
         </button>
       </div>
 
-      {!isFormOpen && <p className="empty-text">No experience added yet.</p>}
+      {/* Empty List */}
+      {!isFormOpen && experiences.length === 0 && (
+        <p className="empty-text">No experience added yet.</p>
+      )}
 
+      {/* Experience List & Card */}
+      {!isFormOpen && experiences.length > 0 && (
+        <div className="experience-list">
+          {experiences.map((exp, index) => (
+            <div key={index} className="experience-card">
+              {exp.company}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Form */}
       {isFormOpen && (
-        <form className="experience-form">
+        <form className="experience-form" onSubmit={(e) => handleSave(e)}>
           <div className="input-group">
             {/* Company */}
             <div className="input-group">
               <label>Company</label>
-              <input type="text" placeholder="Exness" />
+              <input
+                type="text"
+                placeholder="Exness"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+              />
             </div>
             {/* Position */}
             <div className="input-group">
@@ -56,8 +89,11 @@ export default function ExperienceTab({
               <textarea placeholder="e.g. Create responsive web applications, Build API routes, Run unit tests etc..."></textarea>
             </div>
 
+            {/* Form Buttons */}
             <div className="save-cancel-button-box">
-              <button className="save-button">Save</button>
+              <button className="save-button" type="submit">
+                Save
+              </button>
               <button className="cancel-button" onClick={(e) => cancelForm(e)}>
                 Cancel
               </button>

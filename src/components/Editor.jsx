@@ -40,6 +40,7 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
         <ExperienceTab
           isFormOpen={isFormOpen}
           displayForm={displayForm}
+          experiences={experiences}
           saveExperience={saveExperience}
           cancelForm={cancelForm}
         ></ExperienceTab>
@@ -58,4 +59,6 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
       </div>
     );
   }
+
+  return null;
 }

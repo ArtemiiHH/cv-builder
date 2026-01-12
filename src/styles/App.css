@@ -256,10 +256,11 @@ textarea:focus {
   gap: 20px;
 }
 
+/* Experience Card */
 .experience-card {
   background-color: rgb(239, 239, 239);
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   font-size: 1.2rem;
   font-weight: 600;
 }

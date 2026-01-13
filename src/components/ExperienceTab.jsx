@@ -6,6 +6,7 @@ export default function ExperienceTab({
   experiences,
   saveExperience,
   cancelForm,
+  updateExperienceInput,
 }) {
   // Company's name as state
   const [company, setCompany] = useState("");

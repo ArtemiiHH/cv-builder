@@ -38,12 +38,29 @@ export default function Section({ activeTab }) {
     }));
   }
 
+  // Update Experience Form Inputs Live
+  function updateExperienceInput(index, input, value) {
+    setCvData((previous) => {
+      const experienceCopy = [...previous];
+      const entryCopy = { ...experienceCopy[index] };
+
+      entryCopy[input] = value;
+      experienceCopy[index] = entryCopy;
+
+      return {
+        ...previous,
+        experience: experienceCopy,
+      };
+    });
+  }
+
   return (
     <section>
       <Editor
         activeTab={activeTab}
         cvData={cvData}
         updatePersonalInput={updatePersonalInput}
+        updateExperienceInput={updateExperienceInput}
       ></Editor>
       <Preview cvData={cvData}></Preview>
     </section>

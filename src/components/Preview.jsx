@@ -1,4 +1,4 @@
-export default function Preview({ cvData, experiences }) {
+export default function Preview({ cvData, experience }) {
   return (
     <div className="preview-window">
       <div className="cv-preview">
@@ -8,11 +8,11 @@ export default function Preview({ cvData, experiences }) {
           <div className="name-profession">
             {/* Full name */}
             <h1 className="cv-name">
-              {cvData.personal.fullName.toUpperCase()}
+              {(cvData.personal.fullName || "").toUpperCase()}
             </h1>
             {/* Profession */}
             <h3 className="cv-profession">
-              {cvData.personal.profession.toUpperCase()}
+              {(cvData.personal.profession || "").toUpperCase()}
             </h3>
           </div>
 
@@ -25,8 +25,8 @@ export default function Preview({ cvData, experiences }) {
           {/* Work Experience */}
           <div className="work-experience">
             <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
-            {experiences.map((exp, index) => (
-              <h5 key={index}>{exp.company}</h5>
+            {experience.map((exp, index) => (
+              <h5 key={index}>{exp.company || "Company goes here"}</h5>
             ))}
           </div>
         </div>

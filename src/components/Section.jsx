@@ -13,14 +13,16 @@ export default function Section({ activeTab }) {
       biography: "",
     },
 
-    experience: {
-      company: "",
-      position: "",
-      startDate: "",
-      endDate: "",
-      location: "",
-      description: "",
-    },
+    experience: [
+      {
+        company: "",
+        position: "",
+        startDate: "",
+        endDate: "",
+        location: "",
+        description: "",
+      },
+    ],
   });
 
   // Update Personal Form Inputs Live
@@ -41,7 +43,7 @@ export default function Section({ activeTab }) {
         cvData={cvData}
         updatePersonalInput={updatePersonalInput}
       ></Editor>
-      <Preview cvData={cvData}></Preview>
+      <Preview cvData={cvData} experience={cvData.experience}></Preview>
     </section>
   );
 }

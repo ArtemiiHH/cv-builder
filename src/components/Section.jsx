@@ -25,6 +25,8 @@ export default function Section({ activeTab }) {
     ],
   });
 
+  const { personal, experience } = cvData;
+
   // Update Personal Form Inputs Live
   function updatePersonalInput(input, value) {
     setCvData((previous) => ({

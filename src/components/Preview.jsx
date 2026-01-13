@@ -1,4 +1,4 @@
-export default function Preview({ cvData, experience }) {
+export default function Preview({ cvData }) {
   return (
     <div className="preview-window">
       <div className="cv-preview">
@@ -25,8 +25,8 @@ export default function Preview({ cvData, experience }) {
           {/* Work Experience */}
           <div className="work-experience">
             <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
-            {experience.map((exp, index) => (
-              <h5 key={index}>{exp.company || "Company goes here"}</h5>
+            {cvData.experience.map((exp, index) => (
+              <h4 key={index}>{exp.company || "Company goes here"}</h4>
             ))}
           </div>
         </div>

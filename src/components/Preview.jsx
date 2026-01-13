@@ -27,7 +27,7 @@ export default function Preview({ cvData }) {
             <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
             {/* Company's Name */}
             {cvData.experience.map((exp, index) => (
-              <h4 key={index}>{exp.company || "Company goes here"}</h4>
+              <h4 key={index}>{exp.company}</h4>
             ))}
           </div>
         </div>

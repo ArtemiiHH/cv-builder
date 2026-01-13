@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function ExperienceTab({
   isFormOpen,
   displayForm,
-  experiences,
+  closeForm,
   saveExperience,
   cancelForm,
-  updateExperienceInput,
+  experiences,
 }) {
   // Company's name as state
   const [company, setCompany] = useState("");
@@ -16,6 +16,7 @@ export default function ExperienceTab({
     e.preventDefault();
     saveExperience(company);
     setCompany("");
+    closeForm();
   }
 
   return (

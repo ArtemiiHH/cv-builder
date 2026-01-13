@@ -4,24 +4,22 @@ import EducationTab from "./EducationTab";
 import SkillsTab from "./SkillsTab";
 import { useState } from "react";
 
-export default function Editor({ activeTab, cvData, updatePersonalInput }) {
+export default function Editor({ activeTab, cvData, updatePersonalInput, saveExperience }) {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [experiences, setExperiences] = useState([]);
 
   // Show form
   function displayForm() {
     setIsFormOpen(true);
   }
 
-  // Close form when Cancel Button pressed
-  function cancelForm(e) {
-    e.preventDefault();
+  // Close form
+  function closeForm() {
     setIsFormOpen(false);
   }
 
-  // Save and close form when Save Button pressed
-  function saveExperience(company) {
-    setExperiences([...experiences, { company }]);
+  // Close form when Cancel Button pressed
+  function cancelForm(e) {
+    e.preventDefault();
     setIsFormOpen(false);
   }
 
@@ -40,9 +38,10 @@ export default function Editor({ activeTab, cvData, updatePersonalInput }) {
         <ExperienceTab
           isFormOpen={isFormOpen}
           displayForm={displayForm}
-          experiences={experiences}
+          closeForm={closeForm}
           saveExperience={saveExperience}
           cancelForm={cancelForm}
+          experiences={cvData.experience}
         ></ExperienceTab>
       </div>
     );

@@ -25,13 +25,23 @@ export default function Preview({ cvData }) {
           {/* Work Experience */}
           <div className="work-experience">
             <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
-            {/* Start Date */}
-            <h4>
-              {cvData.experience.startDate}
-            </h4>
-            {/* End Date */}
-            {/* Company's Name */}
-            <p>{cvData.experience.company}</p>
+            <div className="date-group">
+              {/* Start Date */}
+              <h4>{cvData.experience.startDate}-</h4>
+              {/* End Date */}
+              <h4>{" " + cvData.experience.endDate}</h4>
+            </div>
+            <div className="company-location-group">
+              {/* Company's Name */}
+              <p>{cvData.experience.company}</p>
+              {/* Location */}
+              <p>-{cvData.experience.location}</p>
+            </div>
+            <ul>
+              <li>
+                {cvData.experience.description}
+              </li>
+            </ul>
           </div>
         </div>
 

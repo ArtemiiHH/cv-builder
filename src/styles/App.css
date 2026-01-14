@@ -10,7 +10,9 @@ body {
 /* Titles */
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -242,4 +244,14 @@ textarea:focus {
   font-size: 1rem;
   letter-spacing: 4px;
   font-weight: 400;
+}
+
+/* Start - End Date Group */
+.date-group {
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.company-location-group {
+  display: flex;
 }

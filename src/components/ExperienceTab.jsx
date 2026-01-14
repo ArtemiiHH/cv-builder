@@ -40,12 +40,24 @@ export default function ExperienceTab({
           {/* End Date */}
           <div className="input-group">
             <label>End Date</label>
-            <input type="number" placeholder="Dec 2025" />
+            <input
+              value={experienceData.endDate}
+              onChange={(e) => updateExperienceInput("endDate", e.target.value)}
+              type="text"
+              placeholder="Dec 2025"
+            />
           </div>
           {/* Location */}
           <div className="input-group">
             <label>Location</label>
-            <input type="text" placeholder="Limassol, Cyprus" />
+            <input
+              value={experienceData.location}
+              onChange={(e) =>
+                updateExperienceInput("location", e.target.value)
+              }
+              type="text"
+              placeholder="Limassol, Cyprus"
+            />
           </div>
         </div>
 
@@ -53,17 +65,13 @@ export default function ExperienceTab({
           {/* Description */}
           <div className="input-group">
             <label>Description</label>
-            <textarea placeholder="e.g. Create responsive web applications, Build API routes, Run unit tests etc..."></textarea>
-          </div>
-
-          {/* Form Buttons */}
-          <div className="save-cancel-button-box">
-            <button className="save-button" type="submit">
-              Save
-            </button>
-            <button className="cancel-button" onClick={(e) => cancelForm(e)}>
-              Cancel
-            </button>
+            <textarea
+              value={experienceData.description}
+              onChange={(e) =>
+                updateExperienceInput("description", e.target.value)
+              }
+              placeholder="e.g. Create responsive web applications, Build API routes, Run unit tests etc..."
+            ></textarea>
           </div>
         </div>
       </form>

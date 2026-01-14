@@ -20,7 +20,14 @@ export default function ExperienceTab({
           {/* Position */}
           <div className="input-group">
             <label>Position</label>
-            <input type="text" placeholder="e.g. Full Stack Developer" />
+            <input
+              value={experienceData.position}
+              onChange={(e) =>
+                updateExperienceInput("position", e.target.value)
+              }
+              type="text"
+              placeholder="e.g. Full Stack Developer"
+            />
           </div>
         </div>
 

@@ -37,6 +37,7 @@ export default function Preview({ cvData }) {
               {/* Location */}
               <p>-{cvData.experience.location}</p>
             </div>
+            <h4>{cvData.experience.position}</h4>
             <ul>
               <li>{cvData.experience.description}</li>
             </ul>
@@ -77,9 +78,9 @@ export default function Preview({ cvData }) {
             </ul>
           </div>
 
-          {/* Soft Skills */}
+          {/* Stack */}
           <div className="soft-skills">
-            <h4 className="cv-section-titles">SOFT SKILLS</h4>
+            <h4 className="cv-section-titles">STACK</h4>
             <ul>
               {cvData.skills.map((skill, index) => (
                 <li key={index}>{skill}</li>

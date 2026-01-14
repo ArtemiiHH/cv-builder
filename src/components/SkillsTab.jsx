@@ -14,13 +14,13 @@ export default function SkillsTab({ skillData, updateSkillsInput }) {
   return (
     <>
       <div className="form-navigation">
-        <h1 className="form-title">Skills</h1>
+        <h1 className="form-title">Stack</h1>
       </div>
       <form>
         <div className="input-group">
-          {/* Soft Skills */}
+          {/* Stack */}
           <div className="input-group">
-            <label>Skills</label>
+            <label>Stack</label>
             <input
               type="text"
               placeholder="Type skill and press Enter"

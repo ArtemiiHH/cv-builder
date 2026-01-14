@@ -81,11 +81,6 @@ export default function Preview({ cvData }) {
           <div className="soft-skills">
             <h4 className="cv-section-titles">SOFT SKILLS</h4>
           </div>
-
-          {/* Hard Skills */}
-          <div className="hard-skills">
-            <h4 className="cv-section-titles">HARD SKILLS</h4>
-          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,6 @@ export default function SkillsTab() {
     <>
       <div className="form-navigation">
         <h1 className="form-title">Skills</h1>
-        <button className="add-button">+ Add</button>
       </div>
       <form>
         <div className="input-group">

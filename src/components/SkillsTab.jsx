@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 export default function SkillsTab() {
+  const [input, setInput] = useState("");
+
+  function handleKeyDown(e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      console.log('Working');
+    }
+  }
+
   return (
     <>
       <div className="form-navigation">
@@ -9,7 +20,7 @@ export default function SkillsTab() {
           {/* Soft Skills */}
           <div className="input-group">
             <label>Skills</label>
-            <input type="text" placeholder="Type skill and press Enter" />
+            <input onKeyDown={handleKeyDown} type="text" placeholder="Type skill and press Enter" />
           </div>
         </div>
       </form>

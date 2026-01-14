@@ -28,6 +28,8 @@ export default function Section({ activeTab }) {
       endYear: "",
       location: "",
     },
+
+    skills: [],
   });
 
   // Update Personal Form Inputs Live

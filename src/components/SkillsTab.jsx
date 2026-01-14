@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-export default function SkillsTab() {
+export default function SkillsTab({ updateSkillsInput }) {
   const [input, setInput] = useState("");
 
   function handleKeyDown(e) {
     if (e.key === "Enter") {
       e.preventDefault();
-      console.log('Working');
+      updateSkillsInput(input.trim());
+      setInput("");
     }
   }
 
@@ -20,7 +21,13 @@ export default function SkillsTab() {
           {/* Soft Skills */}
           <div className="input-group">
             <label>Skills</label>
-            <input onKeyDown={handleKeyDown} type="text" placeholder="Type skill and press Enter" />
+            <input
+              type="text"
+              placeholder="Type skill and press Enter"
+              value={input}
+              onKeyDown={handleKeyDown}
+              onChange={(e) => setInput(e.target.value)}
+            />
           </div>
         </div>
       </form>

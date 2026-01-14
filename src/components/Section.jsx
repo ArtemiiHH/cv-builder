@@ -65,6 +65,14 @@ export default function Section({ activeTab }) {
     }));
   }
 
+  // Update Skills Form Input
+  function updateSkillsInput(skill) {
+    setCvData((previous) => ({
+      ...previous,
+      skills: [...previous.skills, skill],
+    }));
+  }
+
   const { personal, experience } = cvData;
 
   return (
@@ -75,6 +83,7 @@ export default function Section({ activeTab }) {
         updatePersonalInput={updatePersonalInput}
         updateExperienceInput={updateExperienceInput}
         updateEducationInput={updateEducationInput}
+        updateSkillsInput={updateSkillsInput}
       ></Editor>
       <Preview cvData={cvData}></Preview>
     </section>

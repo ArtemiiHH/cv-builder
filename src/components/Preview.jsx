@@ -80,6 +80,11 @@ export default function Preview({ cvData }) {
           {/* Soft Skills */}
           <div className="soft-skills">
             <h4 className="cv-section-titles">SOFT SKILLS</h4>
+            <ul>
+              {cvData.skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

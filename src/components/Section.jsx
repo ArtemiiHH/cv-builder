@@ -13,24 +13,14 @@ export default function Section({ activeTab }) {
       biography: "",
     },
 
-    experience: [],
+    experience: {
+      company: "",
+      position: "",
+      startDate: "",
+      endDate: "",
+      description: "",
+    },
   });
-
-  function saveExperience(company) {
-    setCvData((previous) => ({
-      ...previous,
-      experience: [
-        ...previous.experience,
-        {
-          company,
-          startDate: "",
-          endDate: "",
-          location: "",
-          description: "",
-        },
-      ],
-    }));
-  }
 
   // Update Personal Form Inputs Live
   function updatePersonalInput(input, value) {
@@ -38,6 +28,17 @@ export default function Section({ activeTab }) {
       ...previous,
       personal: {
         ...previous.personal,
+        [input]: value,
+      },
+    }));
+  }
+
+  // Update Experience Form Inputs Live
+  function updateExperienceInput(input, value) {
+    setCvData((previous) => ({
+      ...previous,
+      experience: {
+        ...previous.experience,
         [input]: value,
       },
     }));
@@ -51,7 +52,7 @@ export default function Section({ activeTab }) {
         activeTab={activeTab}
         cvData={cvData}
         updatePersonalInput={updatePersonalInput}
-        saveExperience={saveExperience}
+        updateExperienceInput={updateExperienceInput}
       ></Editor>
       <Preview cvData={cvData}></Preview>
     </section>

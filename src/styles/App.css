@@ -255,3 +255,16 @@ textarea:focus {
 .company-location-group {
   display: flex;
 }
+
+/* Skills */
+.skill-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-card {
+  background-color: rgb(198, 249, 244);
+  color: black;
+  padding: 5px 10px;
+}

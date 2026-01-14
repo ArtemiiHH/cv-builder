@@ -38,9 +38,7 @@ export default function Preview({ cvData }) {
               <p>-{cvData.experience.location}</p>
             </div>
             <ul>
-              <li>
-                {cvData.experience.description}
-              </li>
+              <li>{cvData.experience.description}</li>
             </ul>
           </div>
         </div>
@@ -62,6 +60,21 @@ export default function Preview({ cvData }) {
           {/* Education Details */}
           <div className="education-details">
             <h4 className="cv-section-titles">EDUCATION</h4>
+            <div className="date-group">
+              {/* Start Year */}
+              <h4>{cvData.education.startYear}-</h4>
+              {/* End Year */}
+              <h4>{" " + cvData.education.endYear}</h4>
+            </div>
+            <div className="company-location-group">
+              {/* School Name */}
+              <p>{cvData.education.schoolName}</p>
+              {/* Location */}
+              <p>-{cvData.education.location}</p>
+            </div>
+            <ul>
+              <li>{cvData.education.degree}</li>
+            </ul>
           </div>
 
           {/* Soft Skills */}

@@ -9,12 +9,24 @@ export default function EducationTab({ educationData, updateEducationInput }) {
           {/* Soft Skills */}
           <div className="input-group">
             <label>School Name</label>
-            <input type="text" placeholder="Harvard University" />
+            <input
+              value={educationData.schoolName}
+              onChange={(e) =>
+                updateEducationInput("schoolName", e.target.value)
+              }
+              type="text"
+              placeholder="Harvard University"
+            />
           </div>
           {/* Degree */}
           <div className="input-group">
             <label>Degree</label>
-            <input type="text" placeholder="Bachelor of Computer Science" />
+            <input
+              value={educationData.degree}
+              onChange={(e) => updateEducationInput("degree", e.target.value)}
+              type="text"
+              placeholder="Bachelor of Computer Science"
+            />
           </div>
         </div>
 
@@ -22,17 +34,34 @@ export default function EducationTab({ educationData, updateEducationInput }) {
           {/* Start Year */}
           <div className="input-group">
             <label>Start Year</label>
-            <input type="text" placeholder="Sep 2021" />
+            <input
+              value={educationData.startYear}
+              onChange={(e) =>
+                updateEducationInput("startYear", e.target.value)
+              }
+              type="text"
+              placeholder="Sep 2021"
+            />
           </div>
           {/* End Year */}
           <div className="input-group">
             <label>Graduation Year</label>
-            <input type="text" placeholder="July 2025" />
+            <input
+              value={educationData.endYear}
+              onChange={(e) => updateEducationInput("endYear", e.target.value)}
+              type="text"
+              placeholder="July 2025"
+            />
           </div>
           {/* Location */}
           <div className="input-group">
             <label>Location</label>
-            <input type="text" placeholder="Limassol, Cyprus" />
+            <input
+              value={educationData.location}
+              onChange={(e) => updateEducationInput("location", e.target.value)}
+              type="text"
+              placeholder="Limassol, Cyprus"
+            />
           </div>
         </div>
       </form>

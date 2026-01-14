@@ -8,6 +8,7 @@ export default function Editor({
   cvData,
   updatePersonalInput,
   updateExperienceInput,
+  updateEducationInput,
 }) {
   if (activeTab === "personal") {
     return (
@@ -30,7 +31,10 @@ export default function Editor({
   } else if (activeTab === "education") {
     return (
       <div className="editor-window">
-        <EducationTab></EducationTab>
+        <EducationTab
+          educationData={cvData.education}
+          updateEducationInput={updateEducationInput}
+        ></EducationTab>
       </div>
     );
   } else if (activeTab === "skills") {

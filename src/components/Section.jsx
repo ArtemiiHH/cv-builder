@@ -72,6 +72,7 @@ export default function Section({ activeTab }) {
         cvData={cvData}
         updatePersonalInput={updatePersonalInput}
         updateExperienceInput={updateExperienceInput}
+        updateEducationInput={updateEducationInput}
       ></Editor>
       <Preview cvData={cvData}></Preview>
     </section>

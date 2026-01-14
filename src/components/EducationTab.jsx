@@ -1,4 +1,4 @@
-export default function EducationTab() {
+export default function EducationTab({ educationData, updateEducationInput }) {
   return (
     <>
       <div className="form-navigation">

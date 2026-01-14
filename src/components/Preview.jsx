@@ -27,15 +27,15 @@ export default function Preview({ cvData }) {
             <h4 className="cv-section-titles">WORK EXPERIENCE</h4>
             <div className="date-group">
               {/* Start Date */}
-              <h4>{cvData.experience.startDate}-</h4>
+              <h4>{cvData.experience.startDate}</h4>
               {/* End Date */}
-              <h4>{" " + cvData.experience.endDate}</h4>
+              <h4>{cvData.experience.endDate}</h4>
             </div>
             <div className="company-location-group">
               {/* Company's Name */}
               <p>{cvData.experience.company}</p>
               {/* Location */}
-              <p>-{cvData.experience.location}</p>
+              <p>{cvData.experience.location}</p>
             </div>
             <h4>{cvData.experience.position}</h4>
             <ul>
@@ -63,15 +63,15 @@ export default function Preview({ cvData }) {
             <h4 className="cv-section-titles">EDUCATION</h4>
             <div className="date-group">
               {/* Start Year */}
-              <h4>{cvData.education.startYear}-</h4>
+              <h4>{cvData.education.startYear}</h4>
               {/* End Year */}
-              <h4>{" " + cvData.education.endYear}</h4>
+              <h4>{cvData.education.endYear}</h4>
             </div>
             <div className="company-location-group">
               {/* School Name */}
               <p>{cvData.education.schoolName}</p>
               {/* Location */}
-              <p>-{cvData.education.location}</p>
+              <p>{cvData.education.location}</p>
             </div>
             <ul>
               <li>{cvData.education.degree}</li>

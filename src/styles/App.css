@@ -221,7 +221,6 @@ h4 {
   word-break: break-all;
 }
 
-
 /* CV Preview sheet */
 .cv-preview {
   display: grid;
@@ -270,6 +269,15 @@ h4 {
 .date-group {
   display: flex;
   padding: 10px 0 10px 0;
+}
+
+/* Add dashes between words */
+.date-group > :first-child::after {
+  content: "-";
+}
+
+.company-location-group > :first-child::after {
+  content: "-";
 }
 
 .company-location-group {

@@ -20,6 +20,14 @@ export default function Section({ activeTab }) {
       endDate: "",
       description: "",
     },
+
+    education: {
+      schoolName: "",
+      degree: "",
+      startYear: "",
+      endYear: "",
+      location: "",
+    },
   });
 
   // Update Personal Form Inputs Live
@@ -39,6 +47,17 @@ export default function Section({ activeTab }) {
       ...previous,
       experience: {
         ...previous.experience,
+        [input]: value,
+      },
+    }));
+  }
+
+  // Update Experience Form Inputs Live
+  function updateEducationInput(input, value) {
+    setCvData((previous) => ({
+      ...previous,
+      education: {
+        ...previous.education,
         [input]: value,
       },
     }));

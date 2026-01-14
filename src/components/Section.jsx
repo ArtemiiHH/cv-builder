@@ -73,7 +73,7 @@ export default function Section({ activeTab }) {
     }));
   }
 
-  const { personal, experience } = cvData;
+  const { personal, experience, education, skills } = cvData;
 
   return (
     <section>

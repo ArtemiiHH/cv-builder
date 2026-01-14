@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function SkillsTab({ updateSkillsInput }) {
+export default function SkillsTab({ skillData, updateSkillsInput }) {
   const [input, setInput] = useState("");
 
   function handleKeyDown(e) {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && input.trim() !== "") {
       e.preventDefault();
       updateSkillsInput(input.trim());
       setInput("");
@@ -28,6 +28,14 @@ export default function SkillsTab({ updateSkillsInput }) {
               onKeyDown={handleKeyDown}
               onChange={(e) => setInput(e.target.value)}
             />
+
+            <div className="skill-card-box">
+              {skillData.map((skill, index) => (
+                <span key={index} className="skill-card">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </form>

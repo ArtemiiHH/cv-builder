@@ -212,6 +212,16 @@ textarea:focus {
   padding: 20px;
 }
 
+/* Add word break to all text elements */
+.cv-name,
+.cv-profession,
+ul > li,
+p,
+h4 {
+  word-break: break-all;
+}
+
+
 /* CV Preview sheet */
 .cv-preview {
   display: grid;

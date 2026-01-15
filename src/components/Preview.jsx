@@ -2,8 +2,8 @@ export default function Preview({ cvData }) {
   return (
     <div className="preview-window">
       <div className="cv-preview">
-        {/* Left Row */}
-        <div className="row-one">
+        {/* Left Column */}
+        <div className="column-one">
           {/* Name and Profession */}
           <div className="name-profession">
             {/* Full name */}
@@ -44,8 +44,8 @@ export default function Preview({ cvData }) {
           </div>
         </div>
 
-        {/* Right Row */}
-        <div className="row-two">
+        {/* Right Column */}
+        <div className="column-two">
           {/* Contact Details */}
           <div className="contact-details">
             <h4 className="cv-section-titles">CONTACT</h4>

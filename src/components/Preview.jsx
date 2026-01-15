@@ -1,6 +1,6 @@
 export default function Preview({ cvData }) {
   return (
-    <div className="preview-window">
+    <div className="preview-window printable">
       <div className="cv-preview">
         {/* Left Column */}
         <div className="column-one">

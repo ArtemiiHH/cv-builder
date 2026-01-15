@@ -233,6 +233,12 @@ h4 {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.cv-preview * {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  min-width: 0;
+}
+
 /* Split Preview into 2 columns */
 .column-one {
   display: grid;
@@ -297,4 +303,49 @@ h4 {
   background-color: rgb(198, 249, 244);
   color: black;
   padding: 5px 10px;
+}
+
+/* =========================
+  PRINT STYLES (PDF EXPORT)
+   ========================= */
+
+@media print {
+  /* Remove everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the preview */
+  .printable,
+  .printable * {
+    visibility: visible;
+  }
+
+  /* Position preview correctly */
+  .printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove shadows & background junk */
+  body {
+    background: white;
+    margin: 0;
+  }
+
+  .preview-window {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .cv-preview {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    box-shadow: none;
+  }
 }

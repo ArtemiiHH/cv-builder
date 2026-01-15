@@ -1,4 +1,8 @@
 function Header({ activeTab, onTabChange }) {
+  function handleDownload() {
+    window.print();
+  }
+
   return (
     <header>
       <nav className="tab-navigation">
@@ -28,7 +32,7 @@ function Header({ activeTab, onTabChange }) {
         </button>
       </nav>
       <div className="download-btn">
-        <button>Download</button>
+        <button onClick={handleDownload}>Download</button>
       </div>
     </header>
   );
